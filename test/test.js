@@ -82,3 +82,37 @@ test('odd number of lines at end', function (t) {
     })
     .end(str);
 });
+
+test('odd number of lines at end (empty newline)', function (t) {
+
+  t.plan(2);
+
+  var str = '0\nhello\n1\nworld\n';
+
+  var actual = [
+    ['0', 'hello'],
+    ['1', 'world']
+  ];
+
+  createPairwiseStream({ object: true })
+    .on('data', function(array) {
+      t.deepEqual(actual.shift(), array);
+    })
+    .end(str);
+});
+
+test('empty newline', function (t) {
+
+  t.plan(0);
+
+  var str = '\n';
+
+  createPairwiseStream({ object: true })
+    .on('data', function(array) {
+      t.fail();
+    })
+    .on('end', function() {
+      t.end();
+    })
+    .end(str);
+});
