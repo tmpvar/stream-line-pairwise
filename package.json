@@ -1,13 +1,11 @@
 {
   "name": "stream-line-pairwise",
   "version": "1.0.0",
-  "description": "lines in pairs of lines out",
+  "description": "lines in, pairs of lines out",
   "main": "stream-line-pairwise.js",
   "dependencies": {
-    "duplex": "^1.0.0",
     "duplexer": "^0.1.1",
     "split": "^0.3.0",
-    "tape": "^2.13.3",
     "through2": "^0.5.1"
   },
   "devDependencies": {
