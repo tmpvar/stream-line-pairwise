@@ -1,0 +1,35 @@
+{
+  "name": "stream-line-pairwise",
+  "version": "1.0.0",
+  "description": "lines in pairs of lines out",
+  "main": "stream-line-pairwise.js",
+  "dependencies": {
+    "duplex": "^1.0.0",
+    "duplexer": "^0.1.1",
+    "split": "^0.3.0",
+    "tape": "^2.13.3",
+    "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
+  "scripts": {
+    "test": "tape test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmpvar/stream-line-pairwise.git"
+  },
+  "keywords": [
+    "stream",
+    "line",
+    "pair",
+    "tuple"
+  ],
+  "author": "Elijah Insua <tmpvar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmpvar/stream-line-pairwise/issues"
+  },
+  "homepage": "https://github.com/tmpvar/stream-line-pairwise"
+}
